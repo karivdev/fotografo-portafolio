@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mateo Salazar | Fotógrafo</title>
 
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
     <!--fuente-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,13 +37,11 @@
             <h2>Fotógrafo profesional</h2>
 
             <div class="ubicacion">
-                
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
                     <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0" />
                 </svg>
-
                 <p>Querétaro, México</p>
             </div>
 
@@ -99,38 +100,39 @@
                 </section>
             </div> <!-- .servicios -->
 
+
         <section>
             <h2>Hablemos</h2>
 
-            <form>
+            <form class="formulario">
                 <fieldset>
                     <legend>Cuéntame un poco sobre tu proyecto, tu evento o la historia que quieres convertir en imágenes</legend>
                     
-                    <div>
-                        <div>
+                    <div class="contenedor-campos">
+                        <div class="campo">
                             <label>Nombre</label>
-                            <input type="input-text" type="text" placeholder="Escribe tu nombre">
+                            <input class="input-text" type="text" placeholder="Escribe tu nombre">
                         </div>
 
-                        <div>
+                        <div class="campo">
                             <label>Teléfono</label>
-                            <input type="input-text" type="tel" placeholder="Escribe tu teléfono">
+                            <input class="input-text" type="tel" placeholder="Escribe tu teléfono">
                         </div>
 
-                        <div>
+                        <div class="campo">
                             <label>Correo</label>
-                            <input type="input-text" type="email" placeholder="Escribe tu correo">
+                            <input class="input-text" type="email" placeholder="Escribe tu correo">
                         </div>
 
-                        <div>
+                        <div class="campo">
                             <label>Mensaje</label>
                             <textarea class="input-text" placeholder="Cuéntame sobre tu proyecto..."></textarea>
                         </div>
 
                     </div> <!-- .contenedor-campos -->
 
-                    <div>
-                        <input type="submit" value="Enviar">
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" type="submit" value="Enviar">
                     </div>
 
                 </fieldset>
@@ -138,7 +140,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>© 2026 Mateo Salazar. Todos los derechos reservados.</p>
     </footer>
 
